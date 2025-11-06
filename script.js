@@ -19,10 +19,9 @@ document.querySelectorAll('.read-more').forEach(btn => {
     const post = btn.closest('.post');
     const full = post.querySelector('.post-full');
 
-    // Toggle using the DOM property
     full.hidden = !full.hidden;
 
-    // Update button label
+
     btn.textContent = full.hidden ? 'Read more' : 'Show less';
   });
 });
